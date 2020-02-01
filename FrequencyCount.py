@@ -13,3 +13,18 @@ def CountFrequency(my_list):
     for key, value in freq.items(): 
         
         print ("% d occurs  % d times"%(key, value)) 
+        
+def main():
+    Element = []
+    RANGE = int(input("Input the number of elements to be stored in the list: "))
+    print("Input",RANGE,"elememts in the list:")
+    for i in range(RANGE):
+        print("element -", i, ":",end = " ") 
+        element = int(input())
+        Element.append(element)
+    CountFrequency(Element)
+  
+main()
+
+
+
